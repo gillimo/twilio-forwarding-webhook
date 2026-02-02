@@ -29,3 +29,4 @@ Place your Firebase service account key at `cred.txt` (local-only, never commit)
 
 ## Deployment
 Designed for Google Cloud Functions via `functions_framework`.
+
