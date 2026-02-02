@@ -10,6 +10,24 @@ This service receives inbound SMS, enriches with conversation memory, and genera
 It uses Twilio for SMS, Firestore for persistence, and
 the OpenAI Responses API for text generation.
 
+## Architecture
+```
+Inbound SMS (Twilio)
+    |
+    v
+Webhook Handler (main.py)
+    |
+    +--> Firestore (conversation memory)
+    |
+    +--> Response Orchestrator
+             |
+             v
+        OpenAI Responses API
+             |
+             v
+          SMS Reply
+```
+
 ## Quickstart
 ```bash
 python main.py
