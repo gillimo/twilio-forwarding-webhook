@@ -1,0 +1,5 @@
+env.txt
+cred.txt
+__pycache__/
+.pytest_cache/
+*.pyc

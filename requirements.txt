@@ -1,0 +1,5 @@
+functions-framework
+twilio
+requests
+firebase-admin
+python-dotenv
